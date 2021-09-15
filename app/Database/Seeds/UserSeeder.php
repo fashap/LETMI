@@ -11,12 +11,12 @@ class UserSeeder extends Seeder
         $data = [
             [
                 'username' => 'asidsolihhadin',
-                'password' => password_hash('asid1970', PASSWORD_BCRYPT),
+                'password' => password_hash('asid1970', PASSWORD_DEFAULT),
             ],
             [
                 'username' => 'linaitb',
-                'password' => password_hash('linaitb123', PASSWORD_BCRYPT),
-            ]
+                'password' => password_hash('linaitb123', PASSWORD_DEFAULT),
+            ],
         ];
 
 

@@ -20,7 +20,7 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
  */
 $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Auth');
-$routes->setDefaultMethod('index');
+$routes->setDefaultMethod('login');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 $routes->setAutoRoute(true);
@@ -42,7 +42,8 @@ $routes->get('create-db', function () {
 });
 
 $routes->get('/', 'Home::index');
-$routes->get('/', 'Auth::login');
+$routes->get('/login', 'Auth::index');
+$routes->get('/', 'LandingPage::');
 
 /*
  * --------------------------------------------------------------------
