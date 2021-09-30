@@ -43,7 +43,9 @@ $routes->get('create-db', function () {
 
 $routes->get('/', 'Home::index');
 $routes->get('/login', 'Auth::index');
-$routes->get('/', 'LandingPage::');
+$routes->get('/', 'LandingPage::index');
+$routes->get('/', 'LandingPage::profilePerusahaan');
+$routes->get('/', 'LandingPage::tampil');
 
 /*
  * --------------------------------------------------------------------
