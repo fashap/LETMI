@@ -37,14 +37,15 @@
                             <a class="nav-link link tebel-sedang ms-5" href="<?= site_url('landingPage/index') ?>">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link tebel-sedang" href="<?= site_url('landingPage/profilePerusahaan') ?>">Profile Perusahaan</a>
+                            <a class="nav-link link tebel-sedang ms-5" href="<?= site_url('landingPage/profilePerusahaan') ?>">Profile Perusahaan</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link tebel-sedang" href="#">Kelola Data</a>
+                            <a class="nav-link link tebel-sedang ms-5 pe-5" href="<?= site_url('dashboard/index') ?>">Kelola Data</a>
                         </li>
                     </ul>
-                    <a class="btn bg-custom rounded-pill tebel-sedang shadow" href="<?= site_url('auth/logout') ?>" role="button">Logout</a>
                 </div>
+                <a class="nav-link link tebel-sedang ms-5 me-5 ps-5"><?= session('username'); ?></a>
+                <a class="btn bg-custom rounded-pill tebel-sedang shadow" href="<?= site_url('auth/logout') ?>" role="button">Logout</a>
             </div>
         </nav>
     </header>

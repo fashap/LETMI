@@ -41,11 +41,21 @@ $routes->get('create-db', function () {
     }
 });
 
-$routes->get('/', 'Home::index');
 $routes->get('/login', 'Auth::index');
+
 $routes->get('/', 'LandingPage::index');
 $routes->get('/', 'LandingPage::profilePerusahaan');
-$routes->get('/', 'LandingPage::tampil');
+
+$routes->get('/', 'Dashboard::index');
+
+$routes->get('/', 'Administrasi::index');
+
+$routes->get('/', 'PemegangSaham::index');
+
+$routes->get('/', 'TenagaAhli::index');
+
+$routes->get('/', 'Kontrak::index');
+$routes->get('/', 'Kontrak::create');
 
 /*
  * --------------------------------------------------------------------

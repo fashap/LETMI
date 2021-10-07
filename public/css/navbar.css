@@ -30,11 +30,12 @@ header {
 
 .navbar {
   width: 100%;
+  display: flex;
 }
 
 .nav-link {
   font-size: large;
-  margin-left: 100px;
+  margin: auto;
 }
 
 .desc {

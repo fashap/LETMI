@@ -24,9 +24,4 @@ class LandingPage extends BaseController
         ];
         echo view('landing_page/profile_perusahaan', $data);
     }
-
-    public function tampil()
-    {
-        return view('landing_page/tampil');
-    }
 }
